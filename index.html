@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //Expandir area en el HTML
+        function adjust_textarea(h) {
+            h.style.height = "20px";
+            h.style.height = (h.scrollHeight)+"px";
+        }
+    </script>
+    <form class="form-style-7" action="registrar.php" method="POST">
+        <ul>
+        <li>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" maxlength="100">
+            <span>Introduce el nombre del cliente</span>
+        </li>
+        <li>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" maxlength="100">
+            <span>Introduce el apellido del cliente</span>
+        </li>
+        <li>
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" maxlength="100">
+            <span>Introduce la dirección del cliente</span>
+        </li>
+        <li>
+            <label for="telefono">Teléfono</label>
+            <input type="text" name="telefono" maxlength="100">
+            <span>Introduce el télefono del cliente</span>
+        </li>
+        <li align=center>
+            <input type="submit" value="Registrar cliente" >
+        </li>
+    </form>
+    <form class="form-style-7" action="mostrar.php" method="POST">
+        <li align=center>
+            <input type="submit" value="Ver clientes">
+        </li>
+    </form>
+</body>
+</html>
